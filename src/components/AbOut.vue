@@ -1,11 +1,26 @@
 <template>
-    <div class="aboutMe" style="padding-top: 20px;">
-    <p>Hi, I'm Kgodisho, an aspiring Cloud Developer. I am currently a student at Life Choices coding academy gaining skills in full stack web development. I enjoy creating beautiful, responsive websites that provide an excellent user experience. I am fueled by my passion for understanding the nuances of the advancing world of Technology and knowing I have the ability to contribute to that gives me great joy. I considers myself a "forever student," eager to build on the skills and knowledge I have acquired on software development, by staying in tune with the latest tech trends through continued coursework and professional development.
-        <br><br>
-In my free time, I enjoy both abstract and street photography and all things that involve art and being creative.
-
-</p>
+    <div class="row" style="padding-top: 10%;">
+        <div class="col-sm-4" id="aboutMe">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">HOME</a>
+        <a class="nav-link" href="#item-2">ABOUT ME</a>
+        <a class="nav-link" href="#item-3">PROJECTS</a>
+        <a class="nav-link" href="#item-3">TESTIMONIALS</a>
+        <a class="nav-link" href="#item-3">GET IN TOUCH</a>
+      </nav>
+    </nav>
     </div>
+    <div class="col-sm-8">
+        <p>Hi, I'm Kgodisho, an aspiring Cloud Developer. I am currently a student at Life Choices coding academy gaining skills in full stack web development. I enjoy creating beautiful, responsive websites that provide an excellent user experience. I am fueled by my passion for understanding the nuances of the advancing world of Technology and knowing I have the ability to contribute to that gives me great joy. I considers myself a "forever student," eager to build on the skills and knowledge I have acquired on software development, by staying in tune with the latest tech trends through continued coursework and professional development.
+        <br><br>
+        In my free time, I enjoy both abstract and street photography and all things that involve art and being creative.
+        </p>
+    </div> 
+    </div>
+   
+
+   
     <div class="skills" style="padding-top: 20px;">
      <div class="container">
         <div class="row">
