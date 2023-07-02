@@ -27,11 +27,22 @@ In my free time, I enjoy both abstract and street photography and all things tha
    <div class="row">
     <!-- EDUCATION -->
   <div class="col-sm-6 mb-3 mb-sm-0">
-    <h1>EDUCATION</h1>
+
+    <h2>Education</h2>
+    <div class="education" v-for="item in data" :key="item.ID" >
+        <p>
+        {{education.years}} <br>
+        {{education.where}}<br><br>
+        {{education.describe}}
+    </p>
+    <hr>
+    </div>
+    
+
   </div>
   <!-- EXPERIENCE -->
   <div class="col-sm-6">
-    <h1>EXPERIENCE</h1>
+    <h2>Experience</h2>
   </div>
 </div>
     </div>
@@ -39,7 +50,19 @@ In my free time, I enjoy both abstract and street photography and all things tha
 
 <script>
     export default {
-        
+        data() {
+            return{
+                data: []
+            }
+        },
+        computed:{
+            education(){
+                return this.$store.state.education
+            }
+        },
+        mounted(){
+            this.$store.dispatch('fetchEducation')
+        }
     }
 </script>
 

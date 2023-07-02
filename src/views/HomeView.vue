@@ -25,7 +25,9 @@
       <div class="about">
         <AbOut/>
       </div>
-      
+      <div class="projects" style="padding-top: 5%;">
+        <MyProjects/>
+      </div>
       
       </div>
       </div>
@@ -36,10 +38,11 @@
 <script>
 import AbOut from '@/components/AbOut.vue';
 import MainPage from '@/components/MainPage.vue';
+import MyProjects from '@/components/MyProjects.vue';
 export default {
  
   components: {
-    MainPage, AbOut
+    MainPage, AbOut, MyProjects
   }
 }
 </script>
