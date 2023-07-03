@@ -8,16 +8,14 @@
                         <img src=""
                             alt="image" >
                         <div class="pt-3 text-uppercase name">
-                          Project Name
+                          Name
                         </div>
-                        <div class="designation">Android Developer</div>
+                        <div class="designation">Position</div>
                     </div>
                     <div class="face back-face">
                         <span class="fas fa-quote-left"></span>
                         <div class="testimonial">
-                            I made bacck the purchase price in just 48 hours! Thank you for making it pain less,
-                            pleasant.
-                            The service was execellent. I will refer everyone I know.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti voluptates mollitia cupiditate dicta iste consequuntur quae quasi beatae explicabo nihil aperiam ipsam iusto id maiores accusantium, perferendis dolorum illum?
                         </div>
                         <span class="fas fa-quote-right"></span>
                     </div>

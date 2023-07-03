@@ -14,21 +14,29 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <router-link to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <router-link to="/about">About</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <router-link to="/projects">Projects</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <router-link to="/testimonials">Testiomonials</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Get in Touch</a>
+            <router-link to="/contact">Get in Touch</router-link>
           </li>
         </ul>
+        
+        <p id="moreinfo" style="padding-top: 20%;">Name: Kgodisho Lebopa<br>  
+                  Date of Birth: 19/03/1999 <br> 
+                  Email: kgodisholebopa@gmail.com <br>
+                  Contact: 0762508161 <br>
+                  Address: Wynberg <br>
+                  Language(s):English, Sepedi, TshiVenda
+          </p>
       </div>
     </div>
   </div>
@@ -44,5 +52,30 @@
 </script>
 
 <style scoped>
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+  background: crimson;
+  text-transform: uppercase;
+  transition:all .4s ease-out;
+}
+
+nav ul li:after {
+  position: absolute;
+  background: white;
+  color: crimson;
+  top:0;
+  left: 70px;
+  width: 70px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition:all .4s ease-out;
+}
 
 </style>

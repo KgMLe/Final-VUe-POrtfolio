@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
+import NavBar from '@/components/NavBar.vue';
 export default{
 components: {
   NavBar
@@ -17,10 +17,10 @@ components: {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: black;
 }
 
 nav {
@@ -29,10 +29,11 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* nav a.router-link-exact-active {
+  color: orangered;
+  padding: 10px;
+} */
 </style>
