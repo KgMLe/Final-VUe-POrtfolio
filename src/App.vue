@@ -3,14 +3,15 @@
   <main class="container-fluid">
     <router-view/>
   </main>
- 
+ <FooTer/>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import FooTer from './components/FooTer.vue';
 export default{
 components: {
-  NavBar
+  NavBar, FooTer
 }
 }
 </script>
@@ -21,19 +22,21 @@ components: {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+section {
+  width: 100vh;
 }
 
 nav {
   padding: 30px;
+
 }
 
-nav a {
-  font-weight: bold;
-  color: black;
-}
 
-/* nav a.router-link-exact-active {
-  color: orangered;
-  padding: 10px;
-} */
 </style>
