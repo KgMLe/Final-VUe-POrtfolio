@@ -7,7 +7,11 @@
      HELLO WORLD....
 
    </h1>
+  
     </span>
+     <p>
+    I'm Kgodisho, an aspiring cloud developer
+   </p>
   </div>
   <div class="col-sm-4">
     <img alt="Kgodisho" src="https://i.postimg.cc/qMs31zzG/aremojikg.gif">
@@ -36,8 +40,11 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: 6.5rem;
+  display: grid;
+  place-items: center;
 }
+
 
 
 </style>

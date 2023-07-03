@@ -1,15 +1,15 @@
 <template>
     <div class="row" style="padding-top: 10%;">
         <div class="col-sm-4" id="aboutMe">
-        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-      <nav class="nav nav-pills flex-column">
-        <a class="nav-link" href="#item-1">HOME</a>
-        <a class="nav-link" href="#item-2">ABOUT ME</a>
-        <a class="nav-link" href="#item-3">PROJECTS</a>
-        <a class="nav-link" href="#item-3">TESTIMONIALS</a>
-        <a class="nav-link" href="#item-3">GET IN TOUCH</a>
-      </nav>
-    </nav>
+        <div id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <p id="moreinfo">Name: Kgodisho Lebopa<br>  
+                  Date of Birth: 19/03/1999 <br> 
+                  Email: kgodisholebopa@gmail.com <br>
+                  Contact: 0762508161 <br>
+                  Address: Wynberg <br>
+                  Language(s):English, Sepedi, TshiVenda
+                </p>
+    </div>
     </div>
     <div class="col-sm-8">
         <p>Hi, I'm Kgodisho, an aspiring Cloud Developer. I am currently a student at Life Choices coding academy gaining skills in full stack web development. I enjoy creating beautiful, responsive websites that provide an excellent user experience. I am fueled by my passion for understanding the nuances of the advancing world of Technology and knowing I have the ability to contribute to that gives me great joy. I considers myself a "forever student," eager to build on the skills and knowledge I have acquired on software development, by staying in tune with the latest tech trends through continued coursework and professional development.
@@ -21,7 +21,7 @@
    
 
    
-    <div class="skills" style="padding-top: 20px;">
+    <div class="skills" style="padding-top: 7%;">
      <div class="container">
         <div class="row">
             <h1 class="mySkills">
@@ -44,11 +44,11 @@
   <div class="col-sm-6 mb-3 mb-sm-0">
 
     <h2>Education</h2>
-    <div class="education" v-for="item in data" :key="item.ID" >
+    <div class="education" v-for="item in education" :key="item.id" style="padding-top: 5%">
         <p>
-        {{education.years}} <br>
-        {{education.where}}<br><br>
-        {{education.describe}}
+        {{item.years}} <br>
+        {{item.where}}<br><br>
+        {{item.describe}}
     </p>
     <hr>
     </div>
@@ -58,6 +58,16 @@
   <!-- EXPERIENCE -->
   <div class="col-sm-6">
     <h2>Experience</h2>
+    <div class="experience" v-for="item in experience" :key="item.id">
+        <p>
+        {{item.years}} <br>
+        {{item.where}}<br><br>
+        {{item.describe}}
+    </p>
+    <hr>
+    </div>
+    
+
   </div>
 </div>
     </div>
@@ -73,14 +83,22 @@
         computed:{
             education(){
                 return this.$store.state.education
+               
+            },
+            experience(){
+                return this.$store.state.experience
             }
         },
         mounted(){
-            this.$store.dispatch('fetchEducation')
+            this.$store.dispatch('fetchEducation'),
+            this.$store.dispatch ('fetchExperince')
         }
     }
 </script>
 
 <style scoped>
+p{
+    text-align: justify;
+}
 
 </style>
