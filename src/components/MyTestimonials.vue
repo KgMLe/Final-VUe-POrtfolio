@@ -1,10 +1,11 @@
 
 <template>
     <div style="padding-top: 10%;">
-      <div class="row">
-        <div class="col-lg-4" v-for="item in testimonials" :key="item.id">
+      <div class="row" id="testimonials">
+        <h1><span>Testiomonials</span></h1>
+        <div class="col-lg-4" v-for="item in testimonials" :key="item.id" style="padding-top: 5%;">
                   <div class="card" style="padding-top: 5px;">
-                      <div class="face front-face">
+                      <div class="face front-face" style="padding-top: 5%;">
                           <img :src= "item.image"
                               alt="image" >
                           <div class="pt-3 text-uppercase name">
@@ -45,6 +46,17 @@
   </script>
   
   <style scoped>
+
+  #testimonials{
+    background-color: black;
+    padding-bottom: 4%;
+  }
+
+  span{
+    color: #FF8422;
+    padding-top: 3%;
+    text-align: center;
+  }
   .col-lg-4 {
       display: flex;
       justify-content: center;
@@ -60,7 +72,7 @@
   
   .card .face {
       position: absolute;
-      color: black;
+      color: white;
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -70,8 +82,8 @@
       transform-style: preserve-3d;
       transition: 0.5s;
       backface-visibility: hidden;
-      border-top: 1px solid #ddd;
-      border-left: 1px solid #ddd;
+      border-top: 1px solid #FF8422;
+      border-left: 1px solid #FF8422;
     
   }
   
@@ -96,7 +108,7 @@
   
   .card .face.front-face .designation {
       font-size: 0.8rem;
-      color: black;
+      color: white;
       letter-spacing: 0.8px;
   }
   
