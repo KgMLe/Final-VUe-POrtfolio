@@ -21,13 +21,17 @@ components: {
   font-family: Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: black;
+  color: white;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: orangered;
 }
 
-
+span{
+  color: black;
+  font-weight: bold;
+}
 
 section {
   width: 100vh;
@@ -37,6 +41,8 @@ nav {
   padding: 30px;
 
 }
+
+
 
 
 </style>

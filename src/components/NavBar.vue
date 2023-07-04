@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <nav class="navbar bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img id ="logo" src="https://i.postimg.cc/RZhXBz7Z/Pink-and-Beige-Web-Projects-Computer-Logo-removebg-preview.png" alt="logo" loading="lazy"></a>
@@ -70,6 +70,20 @@ router-link{
   transition: 1s;
 }
 
+nav{
+  background-color: transparent !important;
+}
 
+/* .navbar{
+  background-color: black;
+} */
+
+.offcanvas{
+  background-color: black;
+}
+
+button{
+  color: white;
+}
 
 </style>

@@ -1,6 +1,6 @@
 <template>
-
-<div class="card" style="width: 18rem;"  v-for="item in projects" :key="item.id">
+<div class="container">
+  <div class="card" style="width: 18rem;"  v-for="item in projects" :key="item.id">
   <img :src="item.image" class="card-img-top" alt="image">
   <div class="card-body">
     <h5 class="card-title">{{item.name}}</h5>
@@ -11,8 +11,7 @@
     <a href= {{item.netlify}} class="card-link">Another link</a>
   </div>
 </div>
-
- 
+</div>
 </template>
 
 <script>

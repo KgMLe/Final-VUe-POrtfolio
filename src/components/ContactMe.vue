@@ -5,7 +5,7 @@
     <div class="row">
     <div class="col-sm-6" id="contactme" style="padding-left: 7%;">
         <span>
-            <p>GET IN<br>TOUCH</p>
+            <p>GET IN<br>TOUCH</p> 
         </span>
   
     </div>
@@ -15,7 +15,7 @@
   </div>
   <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label"></label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email address" >
+  <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Enter email address" >
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label"></label>
