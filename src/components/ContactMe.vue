@@ -21,6 +21,7 @@
   <label for="exampleFormControlTextarea1" class="form-label"></label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave a message"></textarea>
 </div>
+<button class="btn">Submit</button>
     </div>
 </div>
 
@@ -35,8 +36,31 @@
 </script>
 
 <style scoped>
+
+.container{
+    padding-bottom: 5%;
+}
 span{
     font-size: 5rem;
     justify-content: end;
 }
+
+input, textarea{
+    background-color: transparent !important;
+    display: block;
+  border-width: 0 0 2px 0;
+  border-color: black;
+
+}
+
+.btn{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
 </style>

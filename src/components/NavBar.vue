@@ -54,11 +54,11 @@ nav ul {
   text-align: center;
 }
 
-.nav-item, ul{
+router-link{
 
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 20px;
-  color: black;
+  color: orangered;
   display: block;
   transition: 0.3s;
   transition: 1s;
@@ -67,6 +67,7 @@ nav ul {
 
 nav{
   background-color: black !important;
+  
 }
 
 /* .navbar{

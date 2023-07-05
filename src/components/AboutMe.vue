@@ -1,11 +1,11 @@
 <template>
-    <div class="row" style="padding-top: 10%;" id="aboutme">
+    <div class="row" style="padding-top: 6%;" id="aboutme">
        
         <div class="col-sm-4" id="aboutMe">
             <h1>
             ABOUT
         </h1>
-        <div id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+        <div id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4">
         <img class="pic" alt="Kgodisho" src="https://i.postimg.cc/qMs31zzG/aremojikg.gif">
     </div>
     </div>
@@ -71,7 +71,7 @@
             </h1>
             <div class="row">
          <!-- <div class="col-sm-3"> -->
-    <div class="col-sm-3" style="width: 18rem; padding-bottom: 3%;" v-for="item in skills" :key="item.id" id="skills" >
+    <div class="col-md-3" style="width: 18rem; padding-bottom: 3%;" v-for="item in skills" :key="item.id" id="skills" >
       <img :src="item.image" class="card-img-top" alt="logo">
       <div class="card-body">
         <h5 class="card-title">{{item.skill}}</h5>
@@ -176,7 +176,6 @@ p{
     background-color: black !important;
     padding: 5%;
     border-top: 1px white;
-    border-radius: 7%;
 }
 
 span, hr{
