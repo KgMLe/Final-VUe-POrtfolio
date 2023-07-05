@@ -17,8 +17,9 @@ components: {
 </script>
 
 <style>
+
 #app {
-  font-family: Poppins, sans-serif;
+ 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -30,7 +31,7 @@ components: {
 
 span{
   color: black;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 section {

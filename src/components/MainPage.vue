@@ -9,7 +9,7 @@
   
    
      <p>
-    I'm <span>Kgodisho</span>, an aspiring <span>Cloud Developer</span> 
+    I'm <span>Kgodisho</span>, an aspiring <span>Solutions Architect</span> 
    </p>
   <!-- </div> -->
   <!-- <div class="col-sm-4"> -->
@@ -57,7 +57,10 @@ p{
 
 span{
   color: black;
+  /* text-decoration: underline; */
+
 }
+
 
 @keyframes typing {
   from {
