@@ -3,6 +3,7 @@
     <div style="padding-top: 10%;">
       <div class="row" id="testimonials">
         <h1><span>Testiomonials</span></h1>
+        
         <div class="col-lg-4" v-for="item in testimonials" :key="item.id" style="padding-top: 5%;">
                   <div class="card" style="padding-top: 5px;">
                       <div class="face front-face" style="padding-top: 5%;">
@@ -49,15 +50,15 @@
 
   #testimonials{
     background-color: black;
-    padding-bottom: 4%;
-    padding-top: 4%;
-    border-radius: 7%;
+    padding-bottom: 7%;
+    padding-top: 3%;
   }
 
   span{
     color: #FF8422;
     padding-top: 3%;
     text-align: center;
+    padding-left: 3%;
   }
   .col-lg-4 {
       display: flex;
