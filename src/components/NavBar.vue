@@ -29,14 +29,6 @@
             <router-link to="/getintouch">Get in Touch</router-link>
           </li>
         </ul>
-<!--         
-        <p id="moreinfo" style="padding-top: 20%;">Name: Kgodisho Lebopa<br>  
-                  Date of Birth: 19/03/1999 <br> 
-                  Email: kgodisholebopa@gmail.com <br>
-                  Contact: 0762508161 <br>
-                  Address: Wynberg <br>
-                  Language(s):English, Sepedi, TshiVenda
-          </p> -->
       </div>
     </div>
   </div>
@@ -56,22 +48,25 @@
 img{
 width: 65px;
 height: 65px;
+border-radius: 50%;
 }
 nav ul {
   text-align: center;
 }
 
-router-link{
+.nav-item, ul{
+
   text-decoration: none;
   font-size: 20px;
   color: black;
   display: block;
   transition: 0.3s;
   transition: 1s;
+  padding: 5%;
 }
 
 nav{
-  background-color: transparent !important;
+  background-color: black !important;
 }
 
 /* .navbar{
@@ -82,8 +77,13 @@ nav{
   background-color: black;
 }
 
+.btn-close{
+  background-color: orangered;
+}
+
 button{
   color: white;
+
 }
 
 </style>

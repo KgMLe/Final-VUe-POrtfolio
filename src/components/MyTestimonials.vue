@@ -50,6 +50,8 @@
   #testimonials{
     background-color: black;
     padding-bottom: 4%;
+    padding-top: 4%;
+    border-radius: 7%;
   }
 
   span{
@@ -74,7 +76,7 @@
       position: absolute;
       color: white;
       width: 100%;
-      height: 100%;
+      height: 110%;
       overflow: hidden;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
