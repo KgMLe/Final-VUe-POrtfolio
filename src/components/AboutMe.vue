@@ -60,26 +60,45 @@
    
 
    <!-- SKILLS -->
-    <div class="skills" style="padding-top: 5%; padding-bottom: 6%;">
+    <div class="skills" style="padding: 5%; ;">
      <div class="container">
         
             <h1 class="mySkills">
                 My Skills 
             </h1>
-            <div class="row">
-         <!-- <div class="col-sm-3"> -->
-    <div class="col-md-4" style="width: 18rem; padding-bottom: 3%;" v-for="item in skills" :key="item.id" id="skills" >
-      <img :src="item.image" class="card-img-top" alt="logo">
+   
+  <!-- <div class="row g-0">
+    <div class="col-sm-4" style="width: 18rem; padding: 3%; margin:3%;" v-for="item in skills" :key="item.id" id="skills" >
+      <img :src="item.image" class="img-fluid rounded-start" alt="logo" >
+      <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">{{item.skill}}</h5>
         <p class="card-text">{{item.progressbar}}</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla libero voluptate, et, molestiae voluptatum sequi odio, delectus quaerat ducimus magni distinctio voluptas tenetur hic commodi! Odit consequatur nulla molestias tempora.</p>
       </div>
     </div>
-  <!-- </div> -->
-  </div>
-
-     </div>
     </div>
+  </div> -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="card mb-3" style="max-width: 540px; margin: 2%;" v-for="item in skills" :key="item.id" id="skills" >
+  <div class="row g-0">
+    <div class="col-md-4" >
+      <img :src="item.image" class="img-fluid rounded-start" alt="picture">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{item.skill}}</h5>
+        <p class="card_text">{{item.progressbar}}</p>
+        <p class="card-text">TSkills description</p>
+      </div>
+    </div>
+  </div>
+  <hr id="underline">
+</div>
+
+</div>
+  </div>
+  </div>
     <!-- RESUME -->
     <div class="resume" style="padding-top: 3%;">
    <div class="row" >
@@ -116,9 +135,12 @@
     </div>
     </div>
   </div>
-  <button class="btn"> View Full Resume here <span class="material-symbols-outlined">
+  <a href="https://drive.google.com/file/d/10u-P0qdd_-UyArYlEdwMIBFAnyIgnbIJ/view?usp=sharing" target="_blank">
+    <button class="btn"> View Full Resume here <span class="material-symbols-outlined">
 receipt_long
 </span></button>
+  </a>
+  
     </div>
 </template>
 
@@ -169,10 +191,17 @@ p{
     text-align: justify;
 }
 
+.card{
+border: 0;
+}
 .resume, #aboutme{
     background-color: black !important;
     padding: 5%;
     border-top: 1px white;
+}
+
+#underline{
+  color: black !important;
 }
 
 span, hr{
