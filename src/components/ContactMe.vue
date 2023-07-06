@@ -12,7 +12,7 @@
     </div>
     <div class="col-sm-6">
     <div class="mb-3">
-    <input type="text" class="form-control" placeholder="Name" aria-label="First and Last Name" required>
+    <input type="text" class="form-control" placeholder="Name" aria-label="name" required>
   </div>
   <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label"></label>
@@ -49,8 +49,8 @@ span{
 input, textarea{
     background-color: transparent !important;
     display: block;
-  border-width: 0 0 2px 0;
-  border-color: black;
+    border-width: 0 0 2px 0;
+    border-color: black;
 
 }
 

@@ -13,20 +13,15 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="btn" :href= "item.github"> Github Repo</button>
-    <button class="btn" :href= "item.netlify"> Hosted Site</button>
+        <a :href= "item.github" target="_blank">
+          <button class="btn"> Github Repo</button>
+        </a>
+        <a :href= "item.netlify" target="_blank">
+          <button class="btn"> Hosted Site</button>
+        </a>
       </div>
       </li>
-    <!-- </ul> -->
-    <!-- <div class="card" v-for="item in projects" :key="item.id">
-      <img :src="item.image" alt="projects">
-      <h5>{{item.name}}</h5>
-        <p>{{item.describe}}</p>
-        <div class="card-body">
-    <button class="btn" href={{item.github}} >Github Repo</button>
-    <button class="btn" href= {{item.netlify}}>Hosted Site</button>
-  </div>
-    </div> -->
+ 
   </div>
 </div>
 </template>

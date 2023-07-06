@@ -93,10 +93,6 @@ nav{
   
 }
 
-.navbar-toggler-icon{
-background-color: #FF8422;
-}
-
 
 .offcanvas{
   background-color: black;

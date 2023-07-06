@@ -52,6 +52,8 @@
     background-color: black;
     padding-bottom: 7%;
     padding-top: 3%;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   span{
@@ -146,11 +148,12 @@
       transform: rotateY(360deg);
   }
   
-  /* @media(max-width: 991.5px) {
+  @media(max-width: 935.5px) {
       .col-lg-4 {
           margin-top: 40px;
           margin-bottom: 20px;
-      } */
+      }
+    }
   </style>
   
   
