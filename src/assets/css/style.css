@@ -6,3 +6,7 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+
+*::-webkit-scrollbar {width: 10px;background-color: transparent} 
+*::-webkit-scrollbar-track {background-color: transparent} 
+*::-webkit-scrollbar-thumb {border-radius: 1rem; background-color: #FF8422}

@@ -1,41 +1,32 @@
 <template>
 <div class="container">
   <span>Portfolio</span>
+  <br>
   <div class="row">
-    
-  <div id="carouselExampleCaptions" class="carousel slide" v-for="item in projects" :key="item.id">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner" >
-    <div class="carousel-item">
-      <img src="" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{item.name}}</h5>
-        <p>{{item.describe}}</p>
+    <!-- <ul class="cards"> -->
+    <li class="card" v-for="item in projects" :key="item.id">
+      <div>
+        <img :src="item.image" alt="projects">
+        <h3 class="card-title">{{item.name}}</h3>
+        <div class="card-content">
+          {{item.describe}}
+        </div>
       </div>
-    </div>
+      <div class="card-link-wrapper">
+        <button class="btn" :href= "item.github"> Github Repo</button>
+    <button class="btn" :href= "item.netlify"> Hosted Site</button>
+      </div>
+      </li>
+    <!-- </ul> -->
+    <!-- <div class="card" v-for="item in projects" :key="item.id">
+      <img :src="item.image" alt="projects">
+      <h5>{{item.name}}</h5>
+        <p>{{item.describe}}</p>
+        <div class="card-body">
+    <button class="btn" href={{item.github}} >Github Repo</button>
+    <button class="btn" href= {{item.netlify}}>Hosted Site</button>
   </div>
-  </div>
- 
-
-  <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-  <div class="card" style="width: 18rem;" v-for="item in projects" :key="item.id">
-  <img :src="item.image" class="card-img-top" alt="image">
-  <div class="card-body">
-    <h5 class="card-title">{{item.name}}</h5>
-    <p class="card-text">{{item.describe}}</p>
-  </div>
-  <div class="card-body">
-    <a href={{item.github}} class="card-link">Github Repo</a>
-    <a href= {{item.netlify}} class="card-link">Hosted Site</a>
-  </div>
-</div>
-</div>
-</div> -->
+    </div> -->
   </div>
 </div>
 </template>
@@ -61,14 +52,72 @@
     }
 </script>
 <style scoped>
-.card{
-  border: 0px 0px 0px 3px solid black;
+/* .card{
+
   background-color: transparent !important;
-}
+} */
 
 span{
   font-size: 2.5em;
   font-weight: bolder;
+}
+
+.row{
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.card {
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 20px;
+  background-color: transparent !important; 
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+}
+
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+
+button {
+  display: inline-block;
+  color: white;
+}
+
+ img {
+  margin-bottom: .75rem;
+  width: 100%;
+}
+
+button:hover {
+  color: black;
+  box-shadow: 0 5px 15px black;
+}
+
+
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card {
+    flex-basis: calc(25% - 30px);
+  }
 }
 
 </style>

@@ -1,7 +1,8 @@
 <template>
     <div class="container" style="padding-top: 10%; ">
 
-<form action="">
+<form action="https://formspree.io/f/mjvqvkoe"
+  method="POST">
     <div class="row">
     <div class="col-sm-6" id="contactme" style="padding-left: 7%;">
         <span>
@@ -11,15 +12,15 @@
     </div>
     <div class="col-sm-6">
     <div class="mb-3">
-    <input type="text" class="form-control" placeholder="First name" aria-label="First and Last Name">
+    <input type="text" class="form-control" placeholder="Name" aria-label="First and Last Name" required>
   </div>
   <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label"></label>
-  <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Enter email address" >
+  <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Enter email address" required >
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label"></label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave a message"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave a message" required></textarea>
 </div>
 <button class="btn">Submit</button>
     </div>
@@ -61,6 +62,11 @@ input, textarea{
     background-color: black;
     border: none;
     cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  box-shadow: 0 5px 15px black;
 }
 
 </style>

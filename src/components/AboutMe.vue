@@ -51,9 +51,6 @@
 </svg>  Language(s):English, Sepedi, TshiVenda, Afrikaans
         </p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-      </div>
     </div>
   </div>
 </div>
@@ -71,7 +68,7 @@
             </h1>
             <div class="row">
          <!-- <div class="col-sm-3"> -->
-    <div class="col-md-3" style="width: 18rem; padding-bottom: 3%;" v-for="item in skills" :key="item.id" id="skills" >
+    <div class="col-md-4" style="width: 18rem; padding-bottom: 3%;" v-for="item in skills" :key="item.id" id="skills" >
       <img :src="item.image" class="card-img-top" alt="logo">
       <div class="card-body">
         <h5 class="card-title">{{item.skill}}</h5>
@@ -214,6 +211,10 @@ button{
     color: #FF8422;
 }
 
+button:hover {
+  color: white;
+  box-shadow: 0 5px 15px #FF8422;
+}
 .modal{
     color: black;
     font-weight: bold;

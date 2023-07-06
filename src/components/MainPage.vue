@@ -1,5 +1,5 @@
 <template>
-   <div class="container" style="padding-top: 10%; padding-bottom: 20%;" >
+   <div style="padding-top: 6.5%; padding-bottom: 20%;" >
   <div class="row">
     <!-- <div class="col-sm-8" > -->
         
