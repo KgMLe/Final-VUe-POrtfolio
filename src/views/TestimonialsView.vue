@@ -1,8 +1,8 @@
 
 <template>
-    <div style="padding-top: 11%;">
+    <div style="padding-top: 10%;">
       <div class="row" id="testimonials">
-        <h1><span>Testiomonials</span></h1>
+        <h1><span>Testimonials</span></h1>
         
         <div class="col-lg-4" v-for="item in testimonials" :key="item.id" style="padding-top: 5%;">
                   <div class="card" style="padding-top: 5px;">
@@ -52,7 +52,7 @@
     background-color: black;
     padding-bottom: 7%;
     padding-top: 3%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 20px;
   }
 

@@ -39,8 +39,8 @@
 }
 
 .typewrite{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
+  animation:  blinkTextCursor 4s steps(44) 1s 1 normal both,
+   typewriter 4s steps(44) infinite normal;
 }
 
 @keyframes typewriter{

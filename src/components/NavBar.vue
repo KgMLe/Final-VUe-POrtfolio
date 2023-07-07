@@ -83,6 +83,7 @@ nav ul {
   padding: 5%;
 }
 
+
 .links_nav:hover{
   color: #fff;
   box-shadow: inset 600px 0 0 0 orangered;;
@@ -95,6 +96,12 @@ nav{
   
 }
 
+@media(max-width: 567px) {
+
+
+
+
+}
 
 .offcanvas{
   background-color: black;

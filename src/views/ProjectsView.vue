@@ -2,7 +2,7 @@
     <div class="container" style="padding-top:10%;">
       <span style="padding-bottom:5%;">Portfolio</span>
       <br>
-      <div class="row">
+      <div class="row" id="cardrow">
         <!-- <ul class="cards"> -->
         <li class="card" v-for="item in projects" :key="item.id">
           <div>
@@ -59,6 +59,7 @@
     
     .row{
       align-items: stretch;
+      flex-wrap: wrap;
       flex-direction: row;
       flex-wrap: nowrap;
       display: flex;
@@ -70,7 +71,7 @@
     .card {
     
       display: flex;
-      flex-direction: column;
+      flex-direction: wrap;
       flex: 0 0 100%;
       padding: 20px;
       background-color: transparent !important; 
@@ -101,9 +102,8 @@
     
     @media (min-width: 768px) {
 
-     .container{
-        padding-top:10%;
-     }   
+    
+
       .card {
         flex-basis: calc(calc(100% / 3) - 20px);
       }

@@ -78,4 +78,20 @@ button:hover {
   box-shadow: 0 5px 15px black;
 }
 
+@media(max-width: 567px) {
+
+    #contactme{
+        padding: 30px;
+        margin: 20px;
+    } 
+
+    span{
+    font-size: 3rem;
+    justify-content: end;
+}
+
+
+
+}
+
 </style>
