@@ -4,14 +4,14 @@
     <section id="landingpage">
       <MainPage/>
     </section>
-    <section id="aboutpage">
+    <!-- <section id="aboutpage">
       <div class="about">
-        <AboutMe/>
+        <About/>
       </div>
     </section>
     <section id="myProjects">
       <div class="projects" style="padding-top: 5%;">
-        <MyProjects/>
+        <Projects/>
       </div>
     </section> 
     <section id="testimonialspage">
@@ -23,21 +23,21 @@
       <div class="contactme">
       <ContactMe/>
      </div>
-    </section>     
+    </section>      -->
     </div>
   </div>
 </template>
 
 <script>
-import AboutMe from '@/components/AboutMe.vue';
+// import About from './AboutView.vue';
 import MainPage from '@/components/MainPage.vue';
-import MyProjects from '@/components/MyProjects.vue';
-import MyTestimonials from '@/components/MyTestimonials.vue';
-import ContactMe from '@/components/ContactMe.vue'
+// import Projects from './ProjectsView.vue';
+// import MyTestimonials from './TestimonialsView.vue';
+// import ContactMe from './ContactView.vue'
 export default {
  
   components: {
-    MainPage, AboutMe, MyProjects, MyTestimonials, ContactMe 
+    MainPage
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-   <div style="padding-top: 6.5%; padding-bottom: 20%;" >
+   <div class="container" style="padding-top: 6.5%; padding-bottom: 20%;" >
   <div class="row">
     <!-- <div class="col-sm-8" > -->
         
@@ -13,10 +13,6 @@
      <p>
     I'm <span>Kgodisho</span>, an aspiring <span>Solutions Architect</span> 
    </p>
-  <!-- </div> -->
-  <!-- <div class="col-sm-4"> -->
-    <!-- <img alt="Kgodisho" src="https://i.postimg.cc/qMs31zzG/aremojikg.gif"> -->
-  <!-- </div> -->
   </div>
   </div>
   
@@ -39,7 +35,7 @@
     overflow: hidden;
     font-size: 9rem;
     padding-top: 15%;
-
+    font-weight: bold;
 }
 
 .typewrite{
@@ -71,22 +67,53 @@ span{
     #landing{
       margin-top: 40px;
       margin-bottom: 20px;
-      padding-top: 15%;
+      padding-top: 30%;
       /* padding-left: 20%; */
       font-size: 3.5rem;
       
       }
-   p{
+    p{
     font-size: 1em;
     text-transform: capitalize;
-    /* padding-left: 37%; */
-}
-
+      }
+    @keyframes typewriter{
+      from{width: 0;}
+      to{width: 18.5em;}
+      }  
     }
 
+    @media(max-width: 567px) {
 
+      #landing{
+        margin-top: 150px;
+         word-break: break-all;
+         word-wrap: break-word;
+         font-size: 2.5rem;
+      }
+      p {
+        padding-left: 15%;
+      }
+      @keyframes typewriter{
+      from{width: 0;}
+      to{width: 28.5em;}
+      }
 
+    }   
+    
+    @media (width < 408px) {
+      #landing{
+      margin-top: 200px;
+      margin-bottom: 20px;
+      padding-top: 15%;
+      font-size: 2rem;
+      word-wrap: break-all;
+      }
+      svg{
+        display: none;
+      }
 
+    }
+    
 
 
 </style>
