@@ -51,7 +51,7 @@
   #testimonials{
     background-color: black;
     padding-bottom: 7%;
-    padding-top: 3%;
+    /* padding-top: 3%; */
     /* margin-top: 40px; */
     margin-bottom: 20px;
   }

@@ -1,6 +1,6 @@
 <template>
    <div class="container" style="padding-top: 6.5%; padding-bottom: 20%;" >
-  <div class="row">
+  <div>
     <!-- <div class="col-sm-8" > -->
         
       <h1 id="landing" class="typewrite">
@@ -25,7 +25,8 @@
 </script>
 
 <style scoped>
-    
+
+   
 
 #landing {
     width: 3em;
@@ -67,8 +68,8 @@ span{
     #landing{
       margin-top: 40px;
       margin-bottom: 20px;
-      padding-top: 30%;
-      /* padding-left: 20%; */
+      /* padding-top: 30%;
+      padding-left: 20%; */
       font-size: 3.5rem;
       
       }
@@ -76,10 +77,7 @@ span{
     font-size: 1em;
     text-transform: capitalize;
       }
-    @keyframes typewriter{
-      from{width: 0;}
-      to{width: 18.5em;}
-      }  
+  
     }
 
     @media(max-width: 567px) {
@@ -93,9 +91,9 @@ span{
       p {
         padding-left: 15%;
       }
-      @keyframes typewriter{
-      from{width: 0;}
-      to{width: 28.5em;}
+
+      svg{
+        display: none;
       }
 
     }   
