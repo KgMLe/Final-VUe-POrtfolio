@@ -1,6 +1,6 @@
 <template>
      <div>
-    <footer>
+    <footer class="footer">
        
             <div class="rounded-social-buttons">
               <a class="social-button github" href="https://github.com/KgMLe" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -14,7 +14,7 @@
 </svg></a>
 </div>
             <p>Copyright © 2023 Kgodisho Lebopa Portfolio</p>
-        </footer>
+  </footer>
     </div>
 </template>
 
@@ -27,6 +27,8 @@
 <style scoped>
 footer{
   text-align: center;
+  color: black;
+  font-weight: bold;
 }
 
 .rounded-social-buttons {

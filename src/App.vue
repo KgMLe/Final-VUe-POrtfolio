@@ -19,14 +19,20 @@ components: {
 <style>
 
 #app {
- 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   color: white;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: orangered;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto minmax(100vh, 1fr) auto;
+}
+
+#app > *{
+    grid-column: 1/-1;
 }
 
 span{

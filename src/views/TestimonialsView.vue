@@ -1,6 +1,6 @@
 
 <template>
-    <div style="padding-top: 10%;">
+    <div style="padding-top: 11%;">
       <div class="row" id="testimonials">
         <h1><span>Testiomonials</span></h1>
         
