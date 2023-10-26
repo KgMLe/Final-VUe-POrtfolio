@@ -11,7 +11,7 @@
   </div>
   <!-- About Me -->
   <div class="col-sm-8">
-      <p>Hi, I'm Kgodisho, an aspiring <span>Solution Architect.</span> I am currently a student at Life Choices coding academy gaining skills in full stack web development. I enjoy solving problems while creating beautiful, responsive websites that provide an excellent user experience. I am fueled by my passion for understanding the nuances of the advancing world of Technology and knowing I have the ability to contribute to that gives me great joy. I considers myself a "forever student," eager to build on the skills and knowledge I have acquired on software development, by staying in tune with the latest tech trends through continued coursework and professional development.
+      <p>Hi, I'm Kgodisho, an aspiring <span>Solution Architect.</span> I am currently an intern at Life Choices Studio upskilling myself and gaining  new skills. I enjoy solving problems while creating beautiful, responsive websites that provide an excellent user experience. I am fueled by my passion for understanding the nuances of the advancing world of Technology and knowing I have the ability to contribute to that gives me great joy. I considers myself a "forever student," eager to build on the skills and knowledge I have acquired on software development, by staying in tune with the latest tech trends through continued coursework and professional development.
       <br><br>
       In my free time, I enjoy both abstract and street photography and all things that involve art and being creative.
       </p>
@@ -128,7 +128,7 @@ receipt_long
   </div>
   </div>
 </div>
-<a href="https://drive.google.com/file/d/10u-P0qdd_-UyArYlEdwMIBFAnyIgnbIJ/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/1tDDEIo7ICvlB9eR9Qg80wvys176ly-s6/view?usp=sharing" target="_blank">
   <button  class="btn"> View Full Resume here <span class="material-symbols-outlined">
 receipt_long
 </span></button>
